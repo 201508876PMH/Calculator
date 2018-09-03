@@ -21,6 +21,15 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+        public void add_add10and20Returns30()
+        {
+            // variablen uut, står for 'unit under test'
+            var uut = new Calculator();
+            Assert.That(uut.add(10, 20), Is.EqualTo(30));
+
+        }
+
+        [Test]
         public void subtract_subtractMinus1andMinus20()
         {
             var uut = new Calculator();
